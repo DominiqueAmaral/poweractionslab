@@ -5,7 +5,7 @@
     <IntroducedVersion>1.0.0.0</IntroducedVersion>
     <FormPresentation>1</FormPresentation>
     <FormActivationState>1</FormActivationState>
-    <form>
+    <form headerdensity="HighWithControls">
       <tabs>
         <tab verticallayout="true" id="{bb70e3ad-8517-4de5-be1a-c6a9aacd4b75}" IsUserDefined="1">
           <labels>
@@ -35,6 +35,38 @@
                         <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
                       </cell>
                     </row>
+                    <row>
+                      <cell id="{07c33ac2-9a41-42f6-a3df-17b2b21cf9f8}" locklevel="0">
+                        <labels>
+                          <label description="Créé le" languagecode="1036" />
+                        </labels>
+                        <control id="createdon" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{ebfa9d23-7ff2-4721-9ccb-9a10bd6ae9d7}" locklevel="0">
+                        <labels>
+                          <label description="Start Date" languagecode="1036" />
+                        </labels>
+                        <control id="almlab_startdate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="almlab_startdate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{9fe10d79-9d9b-43ba-a4b3-43cff2e10a5c}" locklevel="0">
+                        <labels>
+                          <label description="End Date" languagecode="1036" />
+                        </labels>
+                        <control id="almlab_enddate" classid="{5B773807-9FB2-42DB-97C3-7A91EFF8ADFF}" datafieldname="almlab_enddate" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{286f9067-1585-4382-8fb6-b72351568be2}" locklevel="0">
+                        <labels>
+                          <label description="Approved" languagecode="1036" />
+                        </labels>
+                        <control id="almlab_approved" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="almlab_approved" disabled="false" />
+                      </cell>
+                    </row>
                   </rows>
                 </section>
               </sections>
@@ -42,6 +74,51 @@
           </columns>
         </tab>
       </tabs>
+      <header id="{e66f37e0-8feb-4e89-a7e4-a11187514d87}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{712dc0ca-3c15-40f1-a646-0a10ec034b8a}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{234cae7e-0352-41f4-9f99-f5b690b2cdfb}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{f6a3a2c4-db06-4223-8511-8fbcdf76d80c}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{c03664d6-a062-4018-99ab-a7bf1414d573}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{2f179d88-4a46-4bf9-ad16-bb25b21ae4c6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{479b73ab-2abe-49f8-9355-3130200b58d6}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+            <cell id="{f943db8c-70ee-4f33-986b-d1d757cea84d}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1036" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
     </form>
     <IsCustomizable>1</IsCustomizable>
     <CanBeDeleted>1</CanBeDeleted>
